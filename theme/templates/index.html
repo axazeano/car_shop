@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Home" %}</li>
+{% endblock %}
+
+{% block main %}
+{% blocktrans %}
+<h2>Congratulations!</h2>
+<p>
+    Welcome to our car market!
+</p>
+    <ul>
+    <li>Sales</li>
+    <li>Exclusive car parts</li>
+    <li>Waranty</li>
+    <li>and many more...</li>
+    </ul>
+
+{% endblocktrans %}
+{% endblock %}
